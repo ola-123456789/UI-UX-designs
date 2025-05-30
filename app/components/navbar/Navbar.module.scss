@@ -1,0 +1,104 @@
+@import "../../globals.scss";
+
+
+@mixin displayFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navbar {
+    @include displayFlex();
+    background-color: white;
+    padding: 20px 48px;
+    gap: 649px;
+}
+
+.navbarLinks {
+    @include displayFlex();
+    gap: 32px;
+}
+
+.logoDiv {
+    width: 40px;
+    height: 40px;
+    padding: 4px
+}
+
+.navbarUlDiv {
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbarUlDiv ul {
+    @include displayFlex();
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: $fontWeight;
+    gap: 48px;
+    list-style-type: none;
+}
+
+.logInSignUp {
+    @include displayFlex();
+    gap: 8px;
+}
+
+.loginBtnDiv {
+    @include displayFlex();
+    gap: 6px;
+    width: 92px;
+    height: 40px;
+}
+
+.loginBtn {
+    @include displayFlex();
+    gap: 6px;
+    width: 92px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 10px;
+    border: none;
+}
+
+.loginBtnParDiv {
+    width: 46px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: $fontWeight;
+    line-height: 20px;
+}
+
+.loginBtnImgDiv {
+    size: 20px 20px;
+}
+
+.signupBtnDiv {
+    width: 98px;
+    height: 40px;
+}
+
+.signupBtn {
+    width: 98px;
+    height: 40px;
+    background-color: rgba(92, 83, 233, 1);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.signupBtnPar {
+    color: rgba(255, 255, 255, 1);
+    width: 78px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: $fontWeight;
+    line-height: 20px;
+}

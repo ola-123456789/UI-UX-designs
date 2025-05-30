@@ -1,0 +1,23 @@
+@import "../../globals.scss";
+
+
+
+@mixin displayFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: $backgroundColor;
+    height: 200px;
+    padding: 80px 135px 124px 135px;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerContent div {
+    @include displayFlex()
+}

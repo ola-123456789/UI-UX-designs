@@ -1,0 +1,54 @@
+@import "../../globals.scss";
+
+@mixin displayFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    background-color: $backgroundColor;
+    font-family: $font;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    height: 48 px;
+}
+
+.headerPart1 {
+    background-color: black;
+    padding: 12px 136px 12px 500px;
+    height: 48px;
+}
+
+.textColor p {
+    color: rgba(250, 250, 250, 1);
+}
+
+.changeLanguage {
+    @include displayFlex();
+
+}
+
+.message {
+    padding: 3px 76px 3px 0px;
+    margin-right: 231px;
+    line-height: 21px;
+    font-weight: $fontWeight
+}
+
+.languageOptions {
+    @include displayFlex();
+    width: 78px;
+    height: 24px;
+}
+
+.language {
+    width: 49px;
+    height: 21px;
+    margin-right: 5px;
+    line-height: 21px;
+}
+
+.dropDownImg {
+    width: 24px;
+    height: 24px;
+}
