@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/header/Header";
 import Footer from "./components/footer/Footer";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { ConfigProvider } from "antd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +29,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <AntdRegistry>
+          {/* <ConfigProvider
+            theme={{
+              components: {
+                Carousel: {
+                  arrowOffset: 40,
+                  arrowSize: 20,
+                },
+              },
+            }}
+          > */}
+          <Header />
+          {children}
+          <Footer />
+          {/* </ConfigProvider> */}
+        </AntdRegistry>
+
       </body>
     </html>
   );
