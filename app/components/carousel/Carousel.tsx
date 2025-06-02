@@ -9,7 +9,7 @@ const contentStyle: React.CSSProperties = {
     textAlign: 'center',
     background: '#364d79',
     width: '800px',
-    borderRadius: '30px',
+    // borderRadius: '30px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
