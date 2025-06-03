@@ -34,15 +34,16 @@ export default function RootLayout({
             theme={{
               components: {
                 Carousel: {
-                  arrowOffset: 40,
-                  arrowSize: 20,
+                  // arrowOffset: 40,
+                  // arrowSize: 20,
+                  // borderRadius: 0,
                 },
               },
             }}
           > */}
-          <Header />
-          {children}
-          <Footer />
+            <Header />
+            {children}
+            <Footer />
           {/* </ConfigProvider> */}
         </AntdRegistry>
 
