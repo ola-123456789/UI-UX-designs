@@ -30,26 +30,27 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <AntdRegistry>
-          {/* <ConfigProvider
+          <ConfigProvider
             theme={{
               components: {
                 Carousel: {
-                  // arrowOffset: 40,
-                  // arrowSize: 20,
-                  // borderRadius: 0,
+                  arrowOffset: 40,
+                  arrowSize: 22,
                 },
               },
             }}
-          > */}
+          >
             <Header />
             {children}
             <Footer />
-          {/* </ConfigProvider> */}
+          </ConfigProvider>
+
         </AntdRegistry>
 
       </body>
     </html>
   );
 }
+
 
 
