@@ -15,24 +15,32 @@
     border-radius: 50px;
 }
 
-.carousel :global(.slick-dots li button) {
-    width: 10px;
-    /* Adjust the width */
-    height: 10px;
-    /* Adjust the height */
-    border-radius:  50% !important;
-    /* Make it a circle */
-    background-color: #ccc;
-    /* Default color */
-    border: none;
-    /* Remove the border */
-}
+/* This correctly targets slick dots using SCSS modules */
+// .carousel {
+//     :global(.ant-carousel) :global(.slick-dots) :global(li) :global(button) {
+//         width: 12px;
+//         height: 12px;
+//         border-radius: 50% !important;
+//         background: #ccc !important;
+//         transition: background 0.3s !important;
 
-.carousel :global(.slick-dots li.slick-active button)  {
-    background-color: #007bff;
-    /* Active color */
-    width: 12px;
-    /* Adjust the width */
-    height: 12px;
-    /* Adjust the height */
-}
+//     }
+
+//     :global(.ant-carousel) :global(.slick-dots) :global(li.slick-active) :global(button) {
+//         background: #1890ff !important;
+//     }
+// }
+
+
+// .carouselDiv {
+//   // :global(.ant-carousel .slick-dots li button) {
+//   //   background: rgb(239, 4, 4) !important;
+//   //   transition: background 0.3s !important;
+//   //   opacity: 1;
+//   // }
+
+//   // :global(.ant-carousel .slick-dots li.slick-active button) {
+//   //   background: rgb(255, 24, 24) !important;
+//   //   transition: none !important;
+//   // }
+// }

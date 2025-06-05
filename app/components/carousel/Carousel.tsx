@@ -19,7 +19,7 @@ const contentStyle: React.CSSProperties = {
 
 const App: React.FC = () => (
     <div className={styles.carouselDiv}>
-        <Carousel arrows autoplay effect="fade" className={styles.carousel}>
+        <Carousel autoplay arrows effect="fade" className={`${styles.carousel}`}>
             <div>
                 <img src="/slide 1.webp" alt="" />
             </div>

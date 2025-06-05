@@ -36,6 +36,7 @@ export default function RootLayout({
                 Carousel: {
                   arrowOffset: 40,
                   arrowSize: 22,
+                  // dotOffset: 40,
                 },
               },
             }}
