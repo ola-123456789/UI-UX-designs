@@ -39,39 +39,97 @@ a {
   text-decoration: none;
 }
 
-.ant-carousel .slick-dots-bottom {
-  bottom: 0px !important;
+.ant-carousel {
+  .slick-dots-bottom {
+    bottom: 0px !important;
+  }
+
+  .slick-dots {
+    align-items: baseline;
+
+    li {
+      height: 16px !important;
+      color: black !important;
+      width: 12px !important;
+      margin: 0px 4px 8px 4px !important;
+      transition: all 0.001s !important;
+    }
+
+    li button {
+      width: 12px !important;
+      height: 12px !important;
+      border-radius: 100% !important;
+      background: rgba(153, 153, 153, 1)!important;
+      transition: background 0.3s !important;
+      opacity: 1 !important;
+    }
+
+    /* deletes above white horizontal line */
+    li::after {
+      content: none !important;
+    }
+
+    /* avoiding dots to move right when active */
+    li.slick-active {
+      width: 16px !important;
+      /* padding-bottom: 4px !important; */
+      /* margin-bottom: 50px !important; */
+      margin-left: 2px !important;
+      margin-right: 2px  !important;
+    }
+
+    li.slick-active::after {
+      transform: none !important;
+      transition: none !important;
+      width: 12px !important
+    }
+
+    li.slick-active button {
+      width: 16px !important;
+      height: 16px !important;
+      background:rgba(123, 97, 255, 1) !important;
+      
+    }
+
+
+
+  }
+
 }
 
+/* .ant-carousel .slick-dots-bottom {
+  bottom: 0px !important;
+} */
+
 /* styles/globals.css */
-.ant-carousel .slick-dots li button {
+/* .ant-carousel .slick-dots li button {
   width: 12px !important;
   height: 12px !important;
   border-radius: 100% !important;
   background: rgb(239, 4, 4) !important;
   transition: background 0.3s !important;
   opacity: 1 !important;
-}
+} */
 
 /* .ant-carousel .slick-dots li button::after {
   inset: 0px !important;
 } */
 
-.ant-carousel .slick-dots li {
+/* .ant-carousel .slick-dots li {
   height: auto !important;
   color: black !important;
   width: 12px !important;
-}
+} */
 
 /* deletes above white horizontal line */
-.ant-carousel .slick-dots li::after {
+/* .ant-carousel .slick-dots li::after {
   content: none !important;
-}
+} */
 
 /* avoiding dots to move right when active */
-.ant-carousel .slick-dots li.slick-active {
+/* .ant-carousel .slick-dots li.slick-active {
   width: 12px !important;
-}
+} */
 
 /* Override ant-carousel dot active style */
 /* .ant-carousel .slick-dots li.slick-active button {
@@ -81,11 +139,11 @@ a {
   transition: none !important;
 } */
 
-.ant-carousel .slick-dots li.slick-active::after {
+/* .ant-carousel .slick-dots li.slick-active::after {
   transform: none !important;
   transition: none !important;
   width: 12px !important
-}
+} */
 
 
 
@@ -94,9 +152,9 @@ a {
 
 
 
-.ant-carousel .slick-dots li.slick-active button {
+/* .ant-carousel .slick-dots li.slick-active button {
   background: rgb(255, 24, 24) !important;
-}
+} */
 
 
 @media (prefers-color-scheme: dark) {

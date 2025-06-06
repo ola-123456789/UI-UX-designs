@@ -15,6 +15,27 @@
     border-radius: 50px;
 }
 
+.CarouselTextDiv {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 0.001s
+}
+
+.CarouselTextDiv h5 {
+    font-size: 30px;
+}
+
+.CarouselTextDiv p {
+    font-size: 20px;
+}
+
 /* This correctly targets slick dots using SCSS modules */
 // .carousel {
 //     :global(.ant-carousel) :global(.slick-dots) :global(li) :global(button) {
