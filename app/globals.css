@@ -53,6 +53,7 @@ a {
       width: 12px !important;
       margin: 0px 4px 8px 4px !important;
       transition: all 0.001s !important;
+      margin-inline: 4px !important;
     }
 
     li button {
@@ -84,10 +85,15 @@ a {
       width: 12px !important
     }
 
-    li.slick-active button {
+     li.slick-active button {
+      position: relative !important;
       width: 16px !important;
       height: 16px !important;
-      background:rgba(123, 97, 255, 1) !important;
+      background: red !important;
+      border: solid white 2px;
+      
+      /* outline: solid 4px black; */
+      /* outline-offset: -6px; */
       
     }
 
