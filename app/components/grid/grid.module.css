@@ -1,5 +1,24 @@
 .grid {
     display: grid;
-    grid-gap: 36px;
-    grid-template-columns: repeat(auto fill);
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 36px;
+    width: 100vw;
+    padding-left: 72px;
+    padding-right: 72px;
+    /* margin: 0; */
+    /* box-sizing: border-box; */
+}
+
+.loadMoreBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 159px;
+    height: 40px;
+    border-radius: 9999999px;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }

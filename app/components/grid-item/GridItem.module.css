@@ -1,0 +1,119 @@
+/* body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  } */
+.mainDivClass {
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    background-color: hsl(216deg 50% 16% / 2%);
+    border-radius: 15px;
+    overflow: hidden;
+    /* width: 351px; */
+    /* box-sizing: border-box; */
+}
+
+.imgDiv {
+    width: auto;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.equilibriumImg {
+    width: 278px;
+    height: 278px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hrClass {
+    border: 0.5px solid hsl(215, 32%, 27%);
+    /* margin-top: 24px; */
+    margin-bottom: 16px;
+    width: 278px;
+    height: 0px;
+}
+
+.imgAvatar {
+    width: 33px;
+    height: 33px;
+}
+
+.avatarPar {
+    margin-bottom: 15px;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.9px;
+    margin: 0;
+    margin-left: 16px;
+    color: black;
+    width: 76px;
+    height: 19px;
+}
+
+.avatarPar2 {
+    width: 88px;
+    height: 19px;
+    align-items: center;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.9px;
+    margin: 0;
+    margin-left: 5px;
+    color: red;
+}
+
+.avatarDiv {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 376px) {
+
+    .imgDiv {
+        width: auto;
+        height: auto;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+
+    .equilibriumImg {
+        width: 297px;
+        height: 260px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .hrClass {
+        border: 0.5px solid hsl(215, 32%, 27%);
+        /* margin-top: 24px; */
+        margin-bottom: 16px;
+        width: 302px;
+        height: 0px;
+    }
+
+    .avatarPar {
+        width: 81px;
+        height: 20px;
+    }
+
+    .avatarPar2 {
+        width: 93px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .avatarPar2:hover,
+    .avatarPar2:active {
+        color: skyblue;
+    }
+}
