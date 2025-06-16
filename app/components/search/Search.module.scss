@@ -34,8 +34,12 @@ $backGround: none;
     border-radius: inherit;
     background-color: inherit;
     height: 54px;
-    width: 630px;
+    width: 586px;
     padding-left: 25px;
+}
+
+.input::-webkit-search-cancel-button {
+    display: none;
 }
 
 .input::placeholder {
@@ -59,8 +63,25 @@ $backGround: none;
     cursor: pointer;
 }
 
+.clearBtnDiv {
+    width: 20px;
+    height: 18px;
+}
+
 .clearBtn {
-    display: none;
+    width: 20px;
+    height: 18px;
+    margin-top: 0px;
+}
+
+
+.clearBtnImg {
+    width: 20px;
+    height: 18px;
+}
+
+.clearBtnDiv:hover {
+    opacity: 1 !important;
 }
 
 .searchBtnDiv {
@@ -71,6 +92,7 @@ $backGround: none;
     width: 40px;
     height: 40px;
     padding: 10px;
+    margin-left: 20px;
     background-color: skyblue;
 }
 
@@ -80,4 +102,4 @@ $backGround: none;
 
 .searchBtn:hover {
     opacity: 0.5;
- }
+}
