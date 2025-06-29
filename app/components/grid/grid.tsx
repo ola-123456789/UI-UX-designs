@@ -93,7 +93,7 @@ export default function Grid() {
     }]
 
 
-    const [griItemsCount, setGriItemsCount] = useState(4)
+    const [griItemsCount, setGriItemsCount] = useState(8)
 
     const handleLoadMore = () => {
         setGriItemsCount(griItemsCount + 4)

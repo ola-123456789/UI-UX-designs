@@ -24,7 +24,7 @@
     margin-bottom: 12px;
 }
 
-.equilibriumImg {
+.gridItemImg {
     width: 278px;
     height: 278px;
     border-radius: 8px;
@@ -86,9 +86,9 @@
         cursor: pointer;
     }
 
-    .equilibriumImg {
+    .gridItemImg {
         width: 297px;
-        height: 260px;
+        height: 223px;
         border-radius: 8px;
         overflow: hidden;
     }

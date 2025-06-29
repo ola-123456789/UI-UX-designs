@@ -1,19 +1,37 @@
+'use client'
+
+import { useRouter } from "next/navigation"
 import styles from "./Navbar.module.scss"
+import Link from "next/link"
 
 export default function Navbar() {
+
+    const router = useRouter()
+
+    const handleLogIn = () => {
+        router.push("/logIn")
+    }
+
+    const handleSignUp = () => {
+        router.push("/signUp")
+    }
+
+
+
     return (
         <div>
             <nav className={styles.navbar}>
                 <div className={styles.navbarLinks}>
                     <div className={styles.logoDiv}>
-                        <img src="/black.png" alt="Logo" />
+                        <Link href="/"><img src="/logo_final.png" alt="Logo" className={styles.logoImg} /></Link>
+
                     </div>
                     <div className={styles.navbarUlDiv}>
                         <ul>
-                            <li><a href="#"></a>Option 1</li>
-                            <li><a href="#"></a>Option 2</li>
-                            <li><a href="#"></a>Option 3</li>
-                            <li><a href="#"></a>Option 4</li>
+                            <li><Link href="#" />Option 1</li>
+                            <li><Link href="#" />Option 2</li>
+                            <li><Link href="#" />Option 3</li>
+                            <li><Link href="#" />Option 4</li>
                         </ul>
                     </div>
 
@@ -21,19 +39,21 @@ export default function Navbar() {
 
                 <div className={styles.logInSignUp}>
                     <div className={styles.loginBtnDiv}>
-                        <button className={styles.loginBtn}>
+                        <button className={styles.loginBtn} onClick={handleLogIn}>
                             <div className={styles.loginBtnParDiv}>
-                                <p>Sign In</p>
+                                <p>Log In</p>
                             </div>
                             <div className={styles.loginBtnImgDiv}>
                                 <img className={styles.loginBtnImg} src="/Right Arrow.png" alt="" />
                             </div>
                         </button>
+
                     </div>
                     <div className={styles.signupBtnDiv}>
-                        <button className={styles.signupBtn}>
-                            <p className={styles.signupBtnPar}>Get Started</p>
+                        <button className={styles.signupBtn} onClick={handleSignUp} >
+                            <p className={styles.signupBtnPar}>Sign Up</p>
                         </button>
+
                     </div>
 
                 </div>

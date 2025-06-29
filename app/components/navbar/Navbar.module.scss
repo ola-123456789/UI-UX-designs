@@ -9,20 +9,27 @@
 
 .navbar {
     @include displayFlex();
-    background-color: white;
+    align-items: center;
+    background-color: #fff;
     padding: 20px 48px;
-    gap: 649px;
+    gap: 695px;
 }
 
 .navbarLinks {
     @include displayFlex();
+    align-items: center;
     gap: 32px;
 }
 
 .logoDiv {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 4px
+}
+
+.logoImg {
+    width: 42px;
+    height: 42px;
 }
 
 .navbarUlDiv {
@@ -43,6 +50,11 @@
     list-style-type: none;
 }
 
+.navbarUlDiv ul li:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 .logInSignUp {
     @include displayFlex();
     gap: 8px;
@@ -55,6 +67,10 @@
     height: 40px;
 }
 
+.loginBtnDiv:hover {
+    opacity: 0.8;
+}
+
 .loginBtn {
     @include displayFlex();
     gap: 6px;
@@ -64,6 +80,10 @@
     background-color: rgba(240, 240, 240, 1);
     border-radius: 10px;
     border: none;
+}
+
+.loginBtn:hover {
+    cursor: pointer;
 }
 
 .loginBtnParDiv {
@@ -84,6 +104,10 @@
     height: 40px;
 }
 
+.signupBtnDiv:hover {
+    opacity: 0.9;
+}
+
 .signupBtn {
     width: 98px;
     height: 40px;
@@ -91,6 +115,10 @@
     border-radius: 10px;
     border: none;
     padding: 10px;
+}
+
+.signupBtn:hover {
+    cursor: pointer;
 }
 
 .signupBtnPar {

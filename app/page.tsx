@@ -8,11 +8,13 @@ import Search from "./components/search/Search";
 export default function Home() {
   return (
     <div className={styles.main}>
-      <div className={styles.searchDiv}>
-        <Search />
-      </div>
-      <div className={styles.carouselDiv}>
-        <Carousel />
+      <div className={styles.searchCarouselDiv}>
+        <div className={styles.searchDiv}>
+          <Search />
+        </div>
+        <div className={styles.carouselDiv}>
+          <Carousel />
+        </div>
       </div>
       <div className={styles.gridDiv}>
         <Grid />

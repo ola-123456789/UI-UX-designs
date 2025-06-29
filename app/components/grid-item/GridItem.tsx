@@ -19,8 +19,8 @@ export default function GridItem( props:Props ) {
         <div className={styles.mainDivClass}>
             <div className={styles.imgDiv}>
                 <img
-                    id={styles.equilibriumImg}
-                    className={styles.equilibriumImg}
+                    id={styles.gridItemImg}
+                    className={styles.gridItemImg}
                     src={props.imageSrc}
                     alt=""
                 />
