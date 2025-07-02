@@ -41,7 +41,9 @@ export default function Search() {
 
             <form className={styles.searchForm}>
                 <div className={styles.inputDiv}>
-                    <input type="search" placeholder='What are you looking for' className={styles.input} value={inputValue} onChange={(e) => setInputValue(e.target.value)} onFocus={() => setIsFocus(true)} onBlur={() => setIsFocus(false)} />
+                    <input type="search" placeholder='What are you looking for' className={styles.input} value={inputValue} onChange={(e) => setInputValue(e.target.value)} onFocus={() => setIsFocus(true)}  />
+
+                    {/* onBlur={() => setIsFocus(false)} */}
 
                     <div className={styles.clearBtnDiv} style={{ opacity: inputValue ? "0.5" : "0" }}>
                         <button type='reset' className={`${styles.clearBtn} ${styles.btn}`} onClick={() => setInputValue('')}>
